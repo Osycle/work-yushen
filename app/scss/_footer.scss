@@ -1,0 +1,141 @@
+/* 
+		_footer.scss
+*/
+
+/*
+										---FOOTER---
+*/
+
+
+
+#footer{
+	position: relative;
+	//color: rgba(black, 0.4);
+	//min-height: 150px;
+	line-height: 170%;
+	background-repeat: repeat;
+	background-position-y: top;
+	//background-size: cover;
+	background-color: #efefef;
+	background-image: url('../img/bg/bg-footer.jpg');
+	&:before{
+		font-size: 150px;
+		position: absolute;
+		top: 0 ;
+	}
+	h1{
+		border-left: 0;
+	}
+	color: $color-gray-3;
+}
+.footer-content{
+	.ls-icon-placeholder{
+		&:before{
+			font-size: 350px;
+    	position: absolute;
+    	top: 0;
+    	color: rgba(white, 0.05);
+    	line-height: 100%;
+		}
+	}
+	@media (max-width: 991px) {
+		.container{
+			padding-bottom: 0;
+		}
+		.align-center{
+			flex-direction: column;
+		}
+	}
+}
+.footer-contacts{
+	.fa{
+		color: $color-1;
+		width: 35px;
+	}
+	.fa-phone{
+		font-size: 28px;
+	}
+	.fa-envelope{
+		font-size: 25px;	
+	}
+	.fa-map-marker{
+		font-size: 35px;
+	}
+	@media (max-width: 991px) {
+		.flex.align-i-center{
+    	flex-direction: column;
+		}
+	}
+}
+
+.footer-logo{
+	display: flex;
+  align-items: center;
+	img{
+		width: 166px;
+	}
+	.slogan{
+		font-size: 22px;
+	}
+}
+.footer-feedback{
+	.wrapper{
+		padding: 15px;
+		border-radius: 0 45px 0 45px;
+		position: relative;
+		background-color: $color-1; 
+	}
+	.form-def{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+.footer-socicons{
+	font-size: 20px;
+	li{
+		display: inline-block;
+		transition: all 0.3s ease;
+		text-align: center;
+		margin-left: 5px;
+		border: 1px solid $color-gray-2;
+		color: $color-gray-2;
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+		&:nth-child(1){
+			margin-left: 0;
+		}
+		a{
+			display: flex;
+			height: 100%;
+			align-items: center;
+			i{
+				width: 100%;
+			}
+		}
+		&:hover{
+			border-color: $color-1;
+			color: white;
+			background-color: $color-1;
+			box-shadow: 0 0 20px 0 $color-1;
+		}
+	}
+	.fa-paper-plane{
+		font-size: 16px;
+		transform: translate(-1px, 0);
+	}
+	.fa-instagram{
+		//font-size: 20px;
+	}
+	.fa-facebook{
+		//font-size: 20px;
+	}
+}
+
+.copy-content{
+	background-color: #191919;
+}
+.dev{
+	font-size: 0.9em;
+}
+

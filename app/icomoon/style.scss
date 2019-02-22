@@ -1,0 +1,165 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?prmott');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?prmott#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?prmott') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?prmott') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?prmott##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icm-"], [class*=" icm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icm-d-printer {
+  &:before {
+    content: $icm-d-printer; 
+  }
+}
+.icm-d-printer2 {
+  &:before {
+    content: $icm-d-printer2; 
+  }
+}
+.icm-hours {
+  &:before {
+    content: $icm-hours; 
+  }
+}
+.icm-hours2 {
+  &:before {
+    content: $icm-hours2; 
+  }
+}
+.icm-hours-support {
+  &:before {
+    content: $icm-hours-support; 
+  }
+}
+.icm-assembly {
+  &:before {
+    content: $icm-assembly; 
+  }
+}
+.icm-assembly2 {
+  &:before {
+    content: $icm-assembly2; 
+  }
+}
+.icm-back-arrow {
+  &:before {
+    content: $icm-back-arrow; 
+  }
+}
+.icm-delivery-package-opened {
+  &:before {
+    content: $icm-delivery-package-opened; 
+  }
+}
+.icm-delivery-truck-with-circular-clock {
+  &:before {
+    content: $icm-delivery-truck-with-circular-clock; 
+  }
+}
+.icm-down-arrow {
+  &:before {
+    content: $icm-down-arrow; 
+  }
+}
+.icm-download-button {
+  &:before {
+    content: $icm-download-button; 
+  }
+}
+.icm-factory {
+  &:before {
+    content: $icm-factory; 
+  }
+}
+.icm-flagof-russia {
+  &:before {
+    content: $icm-flagof-russia; 
+  }
+}
+.icm-like {
+  &:before {
+    content: $icm-like; 
+  }
+}
+.icm-map {
+  &:before {
+    content: $icm-map; 
+  }
+}
+.icm-map-pin-marked {
+  &:before {
+    content: $icm-map-pin-marked; 
+  }
+}
+.icm-medal {
+  &:before {
+    content: $icm-medal; 
+  }
+}
+.icm-package {
+  &:before {
+    content: $icm-package; 
+  }
+}
+.icm-placeholder-on-map-paper-in-perspective {
+  &:before {
+    content: $icm-placeholder-on-map-paper-in-perspective; 
+  }
+}
+.icm-product {
+  &:before {
+    content: $icm-product; 
+  }
+}
+.icm-recommended {
+  &:before {
+    content: $icm-recommended; 
+  }
+}
+.icm-telephone {
+  &:before {
+    content: $icm-telephone; 
+  }
+}
+.icm-trophy-cup-silhouette {
+  &:before {
+    content: $icm-trophy-cup-silhouette; 
+  }
+}
+.icm-zoom {
+  &:before {
+    content: $icm-zoom; 
+  }
+}
+.icm-zoom-in {
+  &:before {
+    content: $icm-zoom-in; 
+  }
+}
+.icm-- {
+  &:before {
+    content: $icm--;     
+    color: #e6e7e8;
+  }
+}
+
