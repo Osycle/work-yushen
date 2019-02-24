@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?prmott');
-  src:  url('fonts/icomoon.eot?prmott#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?prmott') format('truetype'),
-    url('fonts/icomoon.woff?prmott') format('woff'),
-    url('fonts/icomoon.svg?prmott#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bvfeuh');
+  src:  url('fonts/icomoon.eot?bvfeuh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bvfeuh') format('truetype'),
+    url('fonts/icomoon.woff?bvfeuh') format('woff'),
+    url('fonts/icomoon.svg?bvfeuh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,85 +24,161 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icm-d-printer:before {
+.icm-appointment:before {
   content: "\e900";
 }
-.icm-d-printer2:before {
+.icm-award .path1:before {
   content: "\e901";
+  color: rgb(135, 196, 59);
 }
-.icm-hours:before {
+.icm-award .path2:before {
   content: "\e902";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-hours2:before {
+.icm-award .path3:before {
   content: "\e903";
+  margin-left: -1em;
+  color: rgb(43, 43, 43);
 }
-.icm-hours-support:before {
+.icm-calendar:before {
   content: "\e904";
 }
-.icm-assembly:before {
+.icm-cogwheel .path1:before {
   content: "\e905";
+  color: rgb(135, 196, 59);
 }
-.icm-assembly2:before {
+.icm-cogwheel .path2:before {
   content: "\e906";
+  margin-left: -1em;
+  color: rgb(43, 43, 43);
 }
-.icm-back-arrow:before {
+.icm-cogwheel .path3:before {
   content: "\e907";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-delivery-package-opened:before {
+.icm-cogwheel .path4:before {
   content: "\e908";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-delivery-truck-with-circular-clock:before {
+.icm-cogwheel .path5:before {
   content: "\e909";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-down-arrow:before {
+.icm-cogwheel .path6:before {
   content: "\e90a";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-download-button:before {
+.icm-cogwheel .path7:before {
   content: "\e90b";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-factory:before {
+.icm-cogwheel .path8:before {
   content: "\e90c";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-flagof-russia:before {
+.icm-cogwheel .path9:before {
   content: "\e90d";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-like:before {
+.icm-cogwheel .path10:before {
   content: "\e90e";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-map:before {
+.icm-customer-service .path1:before {
   content: "\e90f";
+  color: rgb(43, 43, 43);
 }
-.icm-map-pin-marked:before {
+.icm-customer-service .path2:before {
   content: "\e910";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-medal:before {
+.icm-customer-service .path3:before {
   content: "\e911";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-package:before {
+.icm-customer-service .path4:before {
   content: "\e912";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-placeholder-on-map-paper-in-perspective:before {
+.icm-customer-service .path5:before {
   content: "\e913";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-product:before {
+.icm-customer-service .path6:before {
   content: "\e914";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-recommended:before {
+.icm-customer-service .path7:before {
   content: "\e915";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
 }
-.icm-telephone:before {
+.icm-envelope:before {
   content: "\e916";
 }
-.icm-trophy-cup-silhouette:before {
+.icm-eye:before {
   content: "\e917";
 }
-.icm-zoom:before {
+.icm-facebook-logo:before {
   content: "\e918";
 }
-.icm-zoom-in:before {
+.icm-left-arrow-min:before {
   content: "\e919";
 }
-.icm--:before {
+.icm-phone-call:before {
   content: "\e91a";
-  color: #e6e7e8;
+}
+.icm-placeholder:before {
+  content: "\e91b";
+}
+.icm-team .path1:before {
+  content: "\1f322";
+  color: rgb(135, 196, 59);
+}
+.icm-team .path2:before {
+  content: "\1f323";
+  margin-left: -1em;
+  color: rgb(43, 43, 43);
+}
+.icm-team .path3:before {
+  content: "\1f324";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
+}
+.icm-team .path4:before {
+  content: "\1f325";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
+}
+.icm-team .path5:before {
+  content: "\1f326";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
+}
+.icm-team .path6:before {
+  content: "\1f327";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
+}
+.icm-team .path7:before {
+  content: "\1f328";
+  margin-left: -1em;
+  color: rgb(135, 196, 59);
+}
+.icm-telegram:before {
+  content: "\e923";
 }
