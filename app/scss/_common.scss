@@ -5,14 +5,14 @@
 */
 
 $color-1: #7abf17 !default;
-$color-2: #2a2a2a !default;
-$color-3: darken(#7abf17, 5%) !default;
+$color-2: #059dab !default;
+$color-3: #2a2a2a !default;
 $color-4: #e17b31 !default;
 $color-5: #65a328 !default;
 $color-special-1: #2e1c11;
 
-$font-family-1: "Fira Sans";
-$font-family-2: "Century Gothic";
+$font-family-1: "Exo 2";
+$font-family-2: "Fira Sans";
 $font-family-3: "sans-serif";
 
 $color-scroll: $color-1;
@@ -951,7 +951,7 @@ main{
 		font-size: 1em;
 		//font-weight: 400;
 		position: relative;
-		line-height: 130%;
+		line-height: 170%;
 	}
 	ul:not([class]){
 		text-align: left;
