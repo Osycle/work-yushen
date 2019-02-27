@@ -62,7 +62,7 @@ gulp.task('scripts', () =>
 			//app+'/js/plugins/pana-accordion.js',
 			app+'/js/plugins/aos.js',
 			//app+'/js/plugins/wow.js',
-			//app+'/js/plugins/owl.carousel.min.js',
+			app+'/js/plugins/owl.carousel.min.js',
 			app+'/js/plugins/jquery.fancybox.js',
 			app+'/js/plugins/jquery.jcarousel.js',
 			//app+'/js/plugins/classie.js',

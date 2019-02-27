@@ -16,8 +16,8 @@
 	background-repeat: repeat;
 	background-position-y: top;
 	//background-size: cover;
-	background-color: #efefef;
-	background-image: url('../img/bg/bg-footer.jpg');
+	background-color: #2a2a2a;
+	//background-image: url('../img/bg/bg-footer.jpg');
 	&:before{
 		font-size: 150px;
 		position: absolute;
@@ -29,6 +29,13 @@
 	color: $color-gray-3;
 }
 .footer-content{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.container{
+		border-bottom: 3px solid white;
+		padding-bottom: 30px;
+
+	}
 	.ls-icon-placeholder{
 		&:before{
 			font-size: 350px;
@@ -72,22 +79,10 @@
 	display: flex;
   align-items: center;
 	img{
-		width: 166px;
+		width: 252px;
 	}
 	.slogan{
 		font-size: 22px;
-	}
-}
-.footer-feedback{
-	.wrapper{
-		padding: 15px;
-		border-radius: 0 45px 0 45px;
-		position: relative;
-		background-color: $color-1; 
-	}
-	.form-def{
-		padding-right: 15px;
-		padding-left: 15px;
 	}
 }
 .footer-socicons{
@@ -132,8 +127,21 @@
 	}
 }
 
+
+.phone-info{
+	font-family: $font-family-2;
+	small{
+		color: $color-1;
+	}
+	big{
+		color: white;
+		font-size: 2em;
+	}
+}
+
 .copy-content{
-	background-color: #191919;
+	background-color: #2a2a2a;
+	padding-bottom: 30px;
 }
 .dev{
 	font-size: 0.9em;

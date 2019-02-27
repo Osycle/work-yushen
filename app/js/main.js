@@ -37,6 +37,25 @@
 		});
 
 
+		/*Owl carousel*/
+		var owlBtn = ['<span class="owl-btn previous"><svg viewBox="0 0 100 100"><path d="M 198.608,246.104 382.664,62.04 c 5.068,-5.056 7.856,-11.816 7.856,-19.024 0,-7.212 -2.788,-13.968 -7.856,-19.032 L 366.536,7.864 C 361.476,2.792 354.712,0 347.504,0 340.296,0 333.54,2.792 328.476,7.864 L 109.328,227.008 c -5.084,5.08 -7.868,11.868 -7.848,19.084 -0.02,7.248 2.76,14.028 7.848,19.112 l 218.944,218.932 c 5.064,5.072 11.82,7.864 19.032,7.864 7.208,0 13.964,-2.792 19.032,-7.864 l 16.124,-16.12 c 10.492,-10.492 10.492,-27.572 0,-38.06 z" class="arrow"></path></svg></span>', '<span class="owl-btn next"><svg viewBox="0 0 100 100"><path d="M 198.608,246.104 382.664,62.04 c 5.068,-5.056 7.856,-11.816 7.856,-19.024 0,-7.212 -2.788,-13.968 -7.856,-19.032 L 366.536,7.864 C 361.476,2.792 354.712,0 347.504,0 340.296,0 333.54,2.792 328.476,7.864 L 109.328,227.008 c -5.084,5.08 -7.868,11.868 -7.848,19.084 -0.02,7.248 2.76,14.028 7.848,19.112 l 218.944,218.932 c 5.064,5.072 11.82,7.864 19.032,7.864 7.208,0 13.964,-2.792 19.032,-7.864 l 16.124,-16.12 c 10.492,-10.492 10.492,-27.572 0,-38.06 z" class="arrow"></path></svg></span>']
+		$(".short-news-items.owl-carousel").owlCarousel({
+			nav: true,
+			items: 3,
+			dots: !checkSm(),
+			dotsEach: true,
+			touchDrag: false,
+			touchDrag: true,
+			responsive:{
+				0:{items:1},
+				991:{items:3}
+			},
+			navText : owlBtn,
+			margin: 15
+		});
+
+		
+
 		/*FANCYBOX*/
 		if ($("[data-fancybox]").length != 0)
 			$("[data-fancybox]").fancybox({
@@ -214,68 +233,28 @@
 		$(".bnr-carousel .carousel-items").append("<div class='container container-arrows'></div>").find(".container-arrows").append($(".bnr-carousel .carousel-items .flickity-prev-next-button"))
 		
 
-
-	    //short-partners-carousel
-	    if ($(".short-productions-carousel .carousel-items figure").length > 1 || checkSm())
-	      $('.short-productions-carousel .carousel-items').flickity({
-	        imagesLoaded: true,
-	        autoPlay: 3000,
-	        //groupCells: 3,
-	        freeScroll: false,
-	        pauseAutoPlayOnHover: true,
-	        arrowShape: arrowStyle,
-	        initialIndex: Math.round($(".short-partners-carousel .carousel-items figure").length / 2),
-	        prevNextButtons: true,
-	        draggable: false,
-	        adaptiveHeight: false, 
-	        wrapAround: false,
-	        pageDots: !checkSm(),
-	        contain: true,
-	        percentPosition: true,
-	        cellAlign: 'center'
-	      });
 	    
-	    //short-partners-carousel
-	    if ($(".short-partners-carousel .carousel-items figure").length > 5 || checkSm())
-	      $('.short-partners-carousel .carousel-items').flickity({
+	    //short-info-carousel
+	      $('.short-info-carousel .carousel-items').flickity({
 	        imagesLoaded: true,
 	        autoPlay: 3000,
 	        //groupCells: 3,
 	        freeScroll: false,
 	        pauseAutoPlayOnHover: true,
 	        arrowShape: arrowStyle,
-	        initialIndex: Math.round($(".short-partners-carousel .carousel-items figure").length / 2),
+	        initialIndex: 0,
 	        prevNextButtons: true,
 	        draggable: false,
 	        //adaptiveHeight: false, 
-	        wrapAround: ($(".short-partners-carousel .carousel-items figure").length > 5),
-	        pageDots: !checkSm(),
+	        wrapAround: false,
+	        pageDots: false,
 	        contain: true,
 	        cellAlign: 'center',
 	        percentPosition: true
 	      });
 
     	
-	    //certifications-carousel
-	    if ($(".certifications-carousel .carousel-items figure").length > 4 || checkSm())
-	      $('.certifications-carousel .carousel-items').flickity({
-	        imagesLoaded: true,
-	        autoPlay: 3000,
-	        //groupCells: 3,
-	        freeScroll: false,
-	        pauseAutoPlayOnHover: true,
-	        arrowShape: arrowStyle,
-	        initialIndex: 2,
-	        prevNextButtons: true,
-	        draggable: false,
-	        adaptiveHeight: false, 
-	        wrapAround: false,
-	        pageDots: !checkSm(),
-	        contain: true,
-	        percentPosition: true,
-	        cellAlign: 'center'
-	      });
-	    
+
 
 
 

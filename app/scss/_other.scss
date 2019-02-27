@@ -521,3 +521,64 @@ html{
 	border-radius: 0;
 	border-color: $color-gray-1;
 }
+
+
+
+
+
+
+
+
+
+//owl
+div.owl-nav{
+	@media (max-width: 991px) {
+		text-align: center;
+	}
+	.owl-prev, .owl-next{
+		display: inline-block;
+	}
+}
+.owl-dots{
+	margin-left: -5px;
+	margin-right: -5px;
+	.owl-dot{
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
+		background-color: rgba(black, .1);
+		&.active{
+			background-color: $color-1;
+		}
+	}
+}
+.owl-prev{
+	margin-right: 5px;
+}
+.owl-nav{
+	text-align: right;
+}
+.owl-btn{
+	svg{
+		display: block;
+		background-color: $color-1;
+		width: 50px;
+		height: 50px;
+		//display: inline-block;
+	}
+	.arrow{
+		fill: white;
+		transform: scale(0.08);
+    transform-origin: 32% 32%;
+	}
+	&.next{
+		svg{
+			transform: rotate(180deg);
+		}
+	}
+}
+
+
