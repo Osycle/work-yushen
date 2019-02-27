@@ -7,7 +7,7 @@
 $color-1: #7abf17 !default;
 $color-2: #059dab !default;
 $color-3: #2a2a2a !default;
-$color-4: #e17b31 !default;
+$color-4: #e00579 !default;
 $color-5: #65a328 !default;
 $color-special-1: #2e1c11;
 
@@ -18,8 +18,8 @@ $font-family-3: "sans-serif";
 $color-scroll: $color-1;
 $color-footer: #0071BC;
 
-$color-gray-1: #bdbdbd;
-$color-gray-2: #777777;
+$color-gray-1: #ededed; //#bdbdbd
+$color-gray-2: #707070;
 $color-gray-3: #343434;
 
 
@@ -537,11 +537,12 @@ table {
 	}
 	button{
 		width: 100%;
+		font-weight: inherit;
 	}
 	a, button, .btn-this{		
 		line-height: normal;
 		position: relative;
-		font-size: 0.95em;
+		font-size: 1em;
 		&:not([class*="p-h"]){
 			padding-left: 25px;
 			padding-right: 25px;
@@ -1038,11 +1039,9 @@ hr{
 }
 
 .pie-form-control{
-	border: 1px solid rgba($color-1, 0.8);
+	//border: 1px solid rgba($color-1, 0.8);
 	//border-bottom-color: white;
-
 	background-color: white;
-	border-radius: 10px;
 	&:not([class*='color-']){
 		color: inherit;
 		color: currentColor;
@@ -1072,14 +1071,14 @@ input.pie-form-control{
 textarea.pie-form-control{
 	resize: none;
 	border-color: $color-gray-1;
+	border: none;
 	padding: 10px 12px;
 	min-height: 120px;
-	border-radius: 20px;
 	&:not([class*="box-"]):not([class*="col-"]){
 		width: 100%;
 	}
 	&:focus{
-		border-color: $color-2;
+		border-color: $color-1;
 	}
 }
 select.pie-form-control{

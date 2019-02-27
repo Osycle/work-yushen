@@ -153,6 +153,7 @@ $header-min-menu: 70px;
 	}
 }
 .header-info{
+	max-width: 300px;
 	.icm{
 		border-radius: 10px;
 		font-size: 22px;
@@ -211,7 +212,7 @@ $header-min-menu: 70px;
 			}
 		}
 		&:hover{
-			color: $color-2;
+			color: $color-3;
 		}
 	}
 	.fa-paper-plane{
@@ -254,7 +255,7 @@ $header-min-menu: 70px;
     		align-items: center;
 			}
 			&.active{
-				background-color: $color-2;
+				background-color: $color-1;
 			}
 			&:hover{
 				background-color: $color-1;
@@ -723,27 +724,60 @@ textarea.form-control{
 
 }
 
-.form-def{
-	background-color: $color-1;
-	background-image: url('../img/bg/bg-form.jpg');
-	background-size: cover;
-	border-radius: 0 45px 0 45px;
-	color: white;
+#form_def{	
+	@media (min-width: 992px) {
+		width: 420px;
+	}
+}
+#form_production{	
+	input.feedback-control{
+		&:focus{
+			border-color: $color-1;
+		}
+	}
+	.btn-content{
+		@media (min-width: 992px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.btn-def{
+			button{
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.form-def{	
 	padding-right: 40px;
 	padding-left: 40px;
-	@media (min-width: 992px) {
-		//width: 360px;
-	}
-	&:before{
-		@extend .claf;
-		border: 2px dashed white;
-		border-radius: 0 45px 0 45px;
-		transform: scale(0.96);
-		pointer-events: none;
-	}
-	h1, h3{
+
+	h1, h2, h3{
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+	form{
+		h4{
+			text-transform: uppercase;
+		}
+	}
+	.cap-content{
+		color: white;
+		background-color: $color-1;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: -24px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.1em;
+    h2{
+    	line-height: 170%;
+    }
+    p{
+    	width: 80%;
+    	margin: auto;
+    }
 	}
 	.fancybox-close-small{
 		top: 15px;
@@ -756,35 +790,22 @@ textarea.form-control{
     }
 	}
 	input.feedback-control{
-		border: 1px solid $color-1;
+		border: none;
+		border-bottom: 2px solid $color-gray-1;
 		height: 35px;
+		padding-left: 0;
 		color: black;
 		background-color: white;
+		&:focus{
+			border-color: $color-4;
+		}
 	}
 	.input-icon{
 		overflow: hidden;
 		margin-top: 5px;
 	}
-	[class*="ls-icon"]{
-		padding-left: 0 !important;
-		&:before{
-			font-size: 20px;
-			padding: 25px 15px;
-			background-color: $color-3;
-			height: 100%;
-		}
-	}
-	.btn-def{
-		color: black;
-		font-size: 19px;
-		font-weight: 600;
-		box-shadow: -1px 7px 40px -7px rgba(black, 0.6);
-		&:active{
-			box-shadow: -1px 7px 40px -7px rgba(black, 0.0);
-		}
-		&:hover{
-			background-color: white !important;
-		}
+	textarea.pie-form-control{
+		background-color: $color-gray-1;
 	}
 }
 
