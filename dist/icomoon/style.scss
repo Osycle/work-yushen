@@ -1,0 +1,259 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bvfeuh');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bvfeuh#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?bvfeuh') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?bvfeuh') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?bvfeuh##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icm-"], [class*=" icm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icm-appointment {
+  &:before {
+    content: $icm-appointment; 
+  }
+}
+.icm-award .path1 {
+  &:before {
+    content: $icm-award-path1;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-award .path2 {
+  &:before {
+    content: $icm-award-path2;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-award .path3 {
+  &:before {
+    content: $icm-award-path3;  
+    margin-left: -1em;  
+    color: rgb(43, 43, 43);
+  }
+}
+.icm-calendar {
+  &:before {
+    content: $icm-calendar; 
+  }
+}
+.icm-cogwheel .path1 {
+  &:before {
+    content: $icm-cogwheel-path1;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path2 {
+  &:before {
+    content: $icm-cogwheel-path2;  
+    margin-left: -1em;  
+    color: rgb(43, 43, 43);
+  }
+}
+.icm-cogwheel .path3 {
+  &:before {
+    content: $icm-cogwheel-path3;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path4 {
+  &:before {
+    content: $icm-cogwheel-path4;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path5 {
+  &:before {
+    content: $icm-cogwheel-path5;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path6 {
+  &:before {
+    content: $icm-cogwheel-path6;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path7 {
+  &:before {
+    content: $icm-cogwheel-path7;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path8 {
+  &:before {
+    content: $icm-cogwheel-path8;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path9 {
+  &:before {
+    content: $icm-cogwheel-path9;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-cogwheel .path10 {
+  &:before {
+    content: $icm-cogwheel-path10;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-customer-service .path1 {
+  &:before {
+    content: $icm-customer-service-path1;  
+    color: rgb(43, 43, 43);
+  }
+}
+.icm-customer-service .path2 {
+  &:before {
+    content: $icm-customer-service-path2;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-customer-service .path3 {
+  &:before {
+    content: $icm-customer-service-path3;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-customer-service .path4 {
+  &:before {
+    content: $icm-customer-service-path4;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-customer-service .path5 {
+  &:before {
+    content: $icm-customer-service-path5;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-customer-service .path6 {
+  &:before {
+    content: $icm-customer-service-path6;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-customer-service .path7 {
+  &:before {
+    content: $icm-customer-service-path7;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-envelope {
+  &:before {
+    content: $icm-envelope; 
+  }
+}
+.icm-eye {
+  &:before {
+    content: $icm-eye; 
+  }
+}
+.icm-facebook-logo {
+  &:before {
+    content: $icm-facebook-logo; 
+  }
+}
+.icm-left-arrow-min {
+  &:before {
+    content: $icm-left-arrow-min; 
+  }
+}
+.icm-phone-call {
+  &:before {
+    content: $icm-phone-call; 
+  }
+}
+.icm-placeholder {
+  &:before {
+    content: $icm-placeholder; 
+  }
+}
+.icm-team .path1 {
+  &:before {
+    content: $icm-team-path1;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-team .path2 {
+  &:before {
+    content: $icm-team-path2;  
+    margin-left: -1em;  
+    color: rgb(43, 43, 43);
+  }
+}
+.icm-team .path3 {
+  &:before {
+    content: $icm-team-path3;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-team .path4 {
+  &:before {
+    content: $icm-team-path4;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-team .path5 {
+  &:before {
+    content: $icm-team-path5;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-team .path6 {
+  &:before {
+    content: $icm-team-path6;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-team .path7 {
+  &:before {
+    content: $icm-team-path7;  
+    margin-left: -1em;  
+    color: rgb(135, 196, 59);
+  }
+}
+.icm-telegram {
+  &:before {
+    content: $icm-telegram; 
+  }
+}
+

@@ -160,7 +160,7 @@ html{
 		padding-left: 15px;
 		li{
 			list-style: none;
-			list-style-position: outside;
+			list-style-position: inside;
 			list-style-image: url('../img/icons/list-icon.png');
 			margin-top: 10px;
 			margin-bottom: 10px;
@@ -197,6 +197,8 @@ html{
 */
 .breadcrumb{
 	background: transparent;
+	padding: 8px 0;
+
 	&, a, .active{ 		
 		a:hover{
 			transform: translateY(-5px);
@@ -215,13 +217,18 @@ html{
 	& > li + li:before{
 		color: black;
 		//font-family: FontAwesome;
-		content: " > ";
+		content: "/";
 		font-weight: normal;
 		font-size: 1em;
 		margin:0  5px;
 	}
 	li{
 		vertical-align: baseline;
+	}
+	@media (min-width: 992px) {
+		&.m-v-30{
+			margin-top: 45px;
+		}
 	}
 	@media (max-width:991px) {
 		li{
@@ -657,6 +664,7 @@ table {
 			text-align: center;
 			background-color: transparent;
 			transition: all 0.3s ease;
+			border: 1px solid $color-gray-1;
 			a{
 				color: black;
 				display: block;
@@ -729,9 +737,9 @@ body{
 	//color: white;
 	//height: auto;
 	background-color: white;
-	background-image: url('../img/bg/bg-body.jpg');
+	background-image: url('../img/bg/bg-body-article.jpg');
 	background-repeat: repeat-y;
-	background-position: center 750px;
+	background-position: center 0;
 	
 }
 
@@ -830,9 +838,9 @@ thined{
     @media (max-width:991px) {
     	display: none;
     }
-		@media (min-width: 991px) {
-			padding-left: 25px;
-		}
+	}
+	@media (min-width: 991px) {
+		padding-left: 25px;
 	}
 	&[align="left"]{
 		&:after{
@@ -1039,9 +1047,9 @@ hr{
 }
 
 .pie-form-control{
-	//border: 1px solid rgba($color-1, 0.8);
+	border: 1px solid rgba($color-1, 0.8);
 	//border-bottom-color: white;
-	background-color: white;
+	background-color: $color-gray-1;
 	&:not([class*='color-']){
 		color: inherit;
 		color: currentColor;
@@ -1053,9 +1061,9 @@ hr{
 }
 
 input.pie-form-control{
-	height: 40px;
+	height: 50px;
 	padding: 5px 12px;
-	border-radius: 20px;
+	box-shadow: inset 1px 3px 25px -13px black;
 	border-color: $color-gray-1;
 	&[type="checkbox"]{
 		height: auto;
@@ -1065,20 +1073,24 @@ input.pie-form-control{
 		width: 100%;
 	}
 	&:focus{
-		border-color: $color-2;
+		& ~ .input-icon{
+			background-color: $color-1;
+			color: white;
+			border-color: $color-1;
+		}
 	}
 }
 textarea.pie-form-control{
 	resize: none;
 	border-color: $color-gray-1;
-	border: none;
 	padding: 10px 12px;
+	box-shadow: inset 1px 3px 25px -13px black;
 	min-height: 120px;
 	&:not([class*="box-"]):not([class*="col-"]){
 		width: 100%;
 	}
 	&:focus{
-		border-color: $color-1;
+		border-color: transparent;
 	}
 }
 select.pie-form-control{

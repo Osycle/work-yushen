@@ -729,7 +729,7 @@ textarea.form-control{
 		width: 420px;
 	}
 }
-#form_production{	
+#form_production{
 	input.feedback-control{
 		&:focus{
 			border-color: $color-1;
@@ -746,6 +746,9 @@ textarea.form-control{
 				text-transform: uppercase;
 			}
 		}
+	}
+	label{
+		width: 100%;
 	}
 }
 
