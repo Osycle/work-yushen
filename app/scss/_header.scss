@@ -59,6 +59,7 @@ $header-min-menu: 70px;
 	height: $header-top-height;
 	overflow: hidden;
 	padding-top: 30px;
+	flex-wrap: nowrap !important;
 }
 .header-top, .header-bottom{
 	transform: inherit;transform: unset;

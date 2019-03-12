@@ -485,12 +485,20 @@ figcaption{
 .short-advantages-items{
 	figure{
 		.wrapper{
-			display: flex;
+			//display: flex;
+			justify-content: center;
 			padding: 30px;
+			text-align: center;
 			@media (max-width: 991px) {
 				flex-direction: column;
 				justify-content: center;
 			}
+		}
+		.img-content{
+			min-height: 90px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
 		}
 		@media (min-width: 991px) {
 			&:nth-child(1){

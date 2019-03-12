@@ -8186,7 +8186,10 @@ label {
 .header-top-content {
   height: 160px;
   overflow: hidden;
-  padding-top: 30px; }
+  padding-top: 30px;
+  -webkit-flex-wrap: nowrap !important;
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important; }
 
 .header-top, .header-bottom {
   -webkit-transform: inherit;
@@ -9283,11 +9286,12 @@ figcaption {
       margin-top: 100px; } }
 
 .short-advantages-items figure .wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center; }
   @media (max-width: 991px) {
     .short-advantages-items figure .wrapper {
       -webkit-box-orient: vertical;
@@ -9299,6 +9303,21 @@ figcaption {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+
+.short-advantages-items figure .img-content {
+  min-height: 90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
 
 @media (min-width: 991px) {
   .short-advantages-items figure:nth-child(1) {
